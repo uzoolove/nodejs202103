@@ -10,16 +10,16 @@
 ### Visual Studio Code 설정
 1. VSCode 실행
 2. Manage > Setting(좌측 하단의 톱니바퀴 모양 아이콘 클릭 후 Settings 메뉴 선택)
-  	* Auto Save: onFocusChange
-		* Font Size: 각자 맞춰서 조절
-		* Tab Size: 2
-		* Detect Indentation: 체크 해제
+	* Auto Save: onFocusChange
+	* Font Size: 각자 맞춰서 조절
+	* Tab Size: 2
+	* Detect Indentation: 체크 해제
 3. 터미널 설정
-		* View > Terminal 선택
-		* VSCode 하단에 오픈된 TERMINAL 탭 우측 상단의 1:powershell 선택 후 Select Default Shell 선택
-		* VSCode 상단의 선택상자에서 Command Prompt 선택
-		* TERMINAL 탭 우측 상단의 휴지통 아이콘 선택해서 터미널 종료
-		* View > Terminal 선택 후 오픈된 TERMINAL 탭 우측 상단에 1:cmd로 바뀌었는지 확인
+	* View > Terminal 선택
+	* VSCode 하단에 오픈된 TERMINAL 탭 우측 상단의 1:powershell 선택 후 Select Default Shell 선택
+	* VSCode 상단의 선택상자에서 Command Prompt 선택
+	* TERMINAL 탭 우측 상단의 휴지통 아이콘 선택해서 터미널 종료
+	* View > Terminal 선택 후 오픈된 TERMINAL 탭 우측 상단에 1:cmd로 바뀌었는지 확인
 ### 작업 폴더 생성
 * C 드라이브에 nodejs 폴더 생성
 ### VSCode에서 작업 폴더 오픈
