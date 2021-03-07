@@ -21,7 +21,12 @@
   * VSCode 상단의 선택상자에서 Command Prompt 선택
   * TERMINAL 탭 우측 상단의 휴지통 아이콘 선택해서 터미널 종료
   * View > Terminal 선택 후 오픈된 TERMINAL 탭 우측 상단에 1:cmd로 바뀌었는지 확인
-
+### 작업 폴더 생성
+* C 드라이브에 nodejs 폴더 생성
+### VSCode에서 작업 폴더 오픈
+1. VSCode 좌측 아이콘 중 Explorer 선택
+2. Open Folder 선택
+3. 작업 폴더(C:\nodejs) 선택
 ### 소스코드 다운로드
 * day1.zip
 * [Download Pages](https://github.com/uzoolove/nodejs202103/blob/master/sample/day1.zip)(마우스 오른쪽 버튼 > 새 탭에서 링크 열기) 이동 후 Download 버튼 클릭
@@ -29,10 +34,7 @@
   * C:\nodejs\hello
   * C:\nodejs\modules
 
-### VSCode에서 작업 폴더 오픈
-1. VSCode 좌측 아이콘 중 Explorer 선택
-2. Open Folder 선택
-3. 작업 폴더(C:\nodejs) 선택
+
 
 ## PPT 다운로드
 * [Download Pages](https://github.com/uzoolove/nodejs202103/blob/master/ppt)(마우스 오른쪽 버튼 > 새 탭에서 링크 열기) 이동 후 각 PPT 파일 선택해서 Download 버튼 클릭
