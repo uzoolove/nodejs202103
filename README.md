@@ -31,7 +31,7 @@
 * 다운로드 받은 파일을 C:\nodejs 폴더에 압축 해제
 	* day1.zip 압축 해제 후 폴더 구조 확인
 		* C:\nodejs\hello
-  	* C:\nodejs\modules
+		* C:\nodejs\modules
 ## PPT 다운로드
 * [Download Pages](https://github.com/uzoolove/nodejs202103/blob/master/ppt)(마우스 오른쪽 버튼 > 새 탭에서 링크 열기) 이동 후 각 PPT 파일 선택해서 Download 버튼 클릭
 
