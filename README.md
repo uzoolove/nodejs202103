@@ -10,7 +10,7 @@
 ### Visual Studio Code 설정
 1. VSCode 실행
 2. Manage > Setting(좌측 하단의 톱니바퀴 모양 아이콘 클릭 후 Settings 메뉴 선택)
-  * Auto Save: onFocusChange
+  	* Auto Save: onFocusChange
   * Font Size: 각자 맞춰서 조절
   * Tab Size: 2
   * Detect Indentation: 체크 해제
