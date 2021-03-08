@@ -1,0 +1,27 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "멀티캠퍼스 Node.js 프로그래밍 과정(2021.03.08 ~ 2021.03.12)\r # 1일차\r ## 개발환경 구축\r ### 프로그램 설치\r * 본인의 OS에 맞는 버전 다운로드 후 설치\r 1. Nodejs 설치 [Download Pages](https://nodejs.org/en/download/)(마우스 오른쪽 버튼 > 새 탭에서 링크 열기)\r 2. Visual Studio Code 설치 [Download Pages](https://code.visualstudio.com/download)(마우스 오른쪽 버튼 > 새 탭에서 링크 열기)\r 3. Chrome 브라우저 설치 [Download Pages](https://www.google.com/chrome)(마우스 오른쪽 버튼 > 새 탭에서 링크 열기)",
+  "main": "index.js",
+  "dependencies": {
+    "clog": "^0.1.6",
+    "connect": "^3.7.0",
+    "node-static": "^0.7.11",
+    "tracer": "^1.1.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "nodemon ./hello/helloserver.js",
+    "start2": "node ./hello/helloserver2.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uzoolove/nodejs202103.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/uzoolove/nodejs202103/issues"
+  },
+  "homepage": "https://github.com/uzoolove/nodejs202103#readme"
+}
