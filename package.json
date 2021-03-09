@@ -12,7 +12,8 @@
   "devDependencies": {},
   "scripts": {
     "start": "nodemon ./hello/helloserver.js",
-    "start2": "node ./hello/helloserver2.js"
+    "start2": "node ./hello/helloserver2.js",
+    "start3": "mymon ./hello/helloserver.js"
   },
   "repository": {
     "type": "git",

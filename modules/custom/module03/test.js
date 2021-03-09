@@ -26,3 +26,10 @@ fs.readFile('hello.html', function(err, data){
 var path = require('./m4');
 var filepath = path.join(__dirname, 'public', 'hello.html');
 console.log(filepath);
+
+// var logger = require('./m5')({target: 'file', filename: 'output.txt'});
+// var logger = require('./m5')({target: 'file'});
+var logger = require('./m5')();
+logger.log('작업 시작.');
+logger.log('작업 처리중...');
+logger.debug('작업 완료.');

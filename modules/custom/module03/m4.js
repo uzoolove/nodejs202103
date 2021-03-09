@@ -8,7 +8,8 @@ var someObj = {
   },
   readFile: function(filename, fn){
     // filename을 읽어서 fn의 인자값으로 전달.
-    fn('에러메세지', '파일내용');
+    // fn('에러메세지');
+    fn(null, '정상완료된 파일내용');
   },
   join: function(...args){
     var result = '';

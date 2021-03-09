@@ -26,7 +26,7 @@ var server = http.createServer(function(req, res){
   fs.readFile(filename, function(err, data){
     if(err){
       res.writeHead(404);
-      res.end('<h1>' + hello.hi(req.url) + ' file not found!!!</h1>');
+      res.end('<h1>' + hello.hi(req.url) + ' file not found!!!!!</h1>');
     }else{
       res.writeHead(200);
       res.end(data);
@@ -34,7 +34,8 @@ var server = http.createServer(function(req, res){
   });
 
 });
-var port = 1234;
+// var port = 1234;
+var port = process.argv[2] || 8000;
 server.listen(port, function(){
   // http://localhost:1234/hello.html
   console.log('Start HTTP Server.', port);
