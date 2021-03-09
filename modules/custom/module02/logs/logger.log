@@ -7,3 +7,937 @@
 09:44:57 <debug> C:\nodejs202103\modules\custom\module02 (in m3.js:3)
 09:44:57 <debug> C:\nodejs202103\modules\custom\module02\m3.js (in m3.js:4)
 09:44:57 <info> m3 로딩 종료. (in m3.js:6)
+09:48:41 <debug> C:\nodejs202103\modules\custom\module02 (in m3.js:3)
+09:48:41 <info> m3 로딩 종료. (in m3.js:7)
+09:48:41 <debug> C:\nodejs202103\modules\custom\module02\m3.js (in m3.js:4)
+09:48:58 <debug> C:\nodejs202103\modules\custom\module02 (in m3.js:3)
+09:48:58 <info> cache [Object: null prototype] {
+  'C:\\nodejs202103\\modules\\custom\\module02\\m1.js': Module {
+    id: '.',
+    path: 'C:\\nodejs202103\\modules\\custom\\module02',
+    exports: {},
+    parent: null,
+    filename: 'C:\\nodejs202103\\modules\\custom\\module02\\m1.js',
+    loaded: false,
+    children: [ [Module], [Module] ],
+    paths: [
+      'C:\\nodejs202103\\modules\\custom\\module02\\node_modules',
+      'C:\\nodejs202103\\modules\\custom\\node_modules',
+      'C:\\nodejs202103\\modules\\node_modules',
+      'C:\\nodejs202103\\node_modules',
+      'C:\\node_modules'
+    ]
+  },
+  'C:\\nodejs202103\\node_modules\\tracer\\lib\\index.js': Module {
+    id: 'C:\\nodejs202103\\node_modules\\tracer\\lib\\index.js',
+    path: 'C:\\nodejs202103\\node_modules\\tracer\\lib',
+    exports: {
+      console: [Function (anonymous)],
+      colorConsole: [Function (anonymous)],
+      dailyfile: [Function (anonymous)],
+      close: [Function: close],
+      setLevel: [Function: setLevel],
+      getLevel: [Function: getLevel]
+    },
+    parent: Module {
+      id: '.',
+      path: 'C:\\nodejs202103\\modules\\custom\\module02',
+      exports: {},
+      parent: null,
+      filename: 'C:\\nodejs202103\\modules\\custom\\module02\\m1.js',
+      loaded: false,
+      children: [Array],
+      paths: [Array]
+    },
+    filename: 'C:\\nodejs202103\\node_modules\\tracer\\lib\\index.js',
+    loaded: true,
+    children: [ [Module], [Module], [Module], [Module] ],
+    paths: [
+      'C:\\nodejs202103\\node_modules\\tracer\\lib\\node_modules',
+      'C:\\nodejs202103\\node_modules\\tracer\\node_modules',
+      'C:\\nodejs202103\\node_modules',
+      'C:\\node_modules'
+    ]
+  },
+  'C:\\nodejs202103\\node_modules\\tracer\\lib\\console.js': Module {
+    id: 'C:\\nodejs202103\\node_modules\\tracer\\lib\\console.js',
+    path: 'C:\\nodejs202103\\node_modules\\tracer\\lib',
+    exports: [Function (anonymous)],
+    parent: Module {
+      id: 'C:\\nodejs202103\\node_modules\\tracer\\lib\\index.js',
+      path: 'C:\\nodejs202103\\node_modules\\tracer\\lib',
+      exports: [Object],
+      parent: [Module],
+      filename: 'C:\\nodejs202103\\node_modules\\tracer\\lib\\index.js',
+      loaded: true,
+      children: [Array],
+      paths: [Array]
+    },
+    filename: 'C:\\nodejs202103\\node_modules\\tracer\\lib\\console.js',
+    loaded: true,
+    children: [ [Module], [Module], [Module], [Module] ],
+    paths: [
+      'C:\\nodejs202103\\node_modules\\tracer\\lib\\node_modules',
+      'C:\\nodejs202103\\node_modules\\tracer\\node_modules',
+      'C:\\nodejs202103\\node_modules',
+      'C:\\node_modules'
+    ]
+  },
+  'C:\\nodejs202103\\node_modules\\tinytim\\lib\\index.js': Module {
+    id: 'C:\\nodejs202103\\node_modules\\tinytim\\lib\\index.js',
+    path: 'C:\\nodejs202103\\node_modules\\tinytim\\lib',
+    exports: {
+      start: '{{',
+      end: '}}',
+      tim: [Function (anonymous)],
+      clearCache: [Function (anonymous)],
+      render: [Function (anonymous)],
+      renderFile: [Function (anonymous)]
+    },
+    parent: Module {
+      id: 'C:\\nodejs202103\\node_modules\\tracer\\lib\\console.js',
+      path: 'C:\\nodejs202103\\node_modules\\tracer\\lib',
+      exports: [Function (anonymous)],
+      parent: [Module],
+      filename: 'C:\\nodejs202103\\node_modules\\tracer\\lib\\console.js',
+      loaded: true,
+      children: [Array],
+      paths: [Array]
+    },
+    filename: 'C:\\nodejs202103\\node_modules\\tinytim\\lib\\index.js',
+    loaded: true,
+    children: [ [Module] ],
+    paths: [
+      'C:\\nodejs202103\\node_modules\\tinytim\\lib\\node_modules',
+      'C:\\nodejs202103\\node_modules\\tinytim\\node_modules',
+      'C:\\nodejs202103\\node_modules',
+      'C:\\node_modules'
+    ]
+  },
+  'C:\\nodejs202103\\node_modules\\tinytim\\lib\\tinytim.js': Module {
+    id: 'C:\\nodejs202103\\node_modules\\tinytim\\lib\\tinytim.js',
+    path: 'C:\\nodejs202103\\node_modules\\tinytim\\lib',
+    exports: {
+      start: '{{',
+      end: '}}',
+      tim: [Function (anonymous)],
+      clearCache: [Function (anonymous)],
+      render: [Function (anonymous)],
+      renderFile: [Function (anonymous)]
+    },
+    parent: Module {
+      id: 'C:\\nodejs202103\\node_modules\\tinytim\\lib\\index.js',
+      path: 'C:\\nodejs202103\\node_modules\\tinytim\\lib',
+      exports: [Object],
+      parent: [Module],
+      filename: 'C:\\nodejs202103\\node_modules\\tinytim\\lib\\index.js',
+      loaded: true,
+      children: [Array],
+      paths: [Array]
+    },
+    filename: 'C:\\nodejs202103\\node_modules\\tinytim\\lib\\tinytim.js',
+    loaded: true,
+    children: [],
+    paths: [
+      'C:\\nodejs202103\\node_modules\\tinytim\\lib\\node_modules',
+      'C:\\nodejs202103\\node_modules\\tinytim\\node_modules',
+      'C:\\nodejs202103\\node_modules',
+      'C:\\node_modules'
+    ]
+  },
+  'C:\\nodejs202103\\node_modules\\dateformat\\lib\\dateformat.js': Module {
+    id: 'C:\\nodejs202103\\node_modules\\dateformat\\lib\\dateformat.js',
+    path: 'C:\\nodejs202103\\node_modules\\dateformat\\lib',
+    exports: [Function (anonymous)] { masks: [Object], i18n: [Object] },
+    parent: Module {
+      id: 'C:\\nodejs202103\\node_modules\\tracer\\lib\\console.js',
+      path: 'C:\\nodejs202103\\node_modules\\tracer\\lib',
+      exports: [Function (anonymous)],
+      parent: [Module],
+      filename: 'C:\\nodejs202103\\node_modules\\tracer\\lib\\console.js',
+      loaded: true,
+      children: [Array],
+      paths: [Array]
+    },
+    filename: 'C:\\nodejs202103\\node_modules\\dateformat\\lib\\dateformat.js',
+    loaded: true,
+    children: [],
+    paths: [
+      'C:\\nodejs202103\\node_modules\\dateformat\\lib\\node_modules',
+      'C:\\nodejs202103\\node_modules\\dateformat\\node_modules',
+      'C:\\nodejs202103\\node_modules',
+      'C:\\node_modules'
+    ]
+  },
+  'C:\\nodejs202103\\node_modules\\tracer\\lib\\utils.js': Module {
+    id: 'C:\\nodejs202103\\node_modules\\tracer\\lib\\utils.js',
+    path: 'C:\\nodejs202103\\node_modules\\tracer\\lib',
+    exports: { union: [Function (anonymous)], format: [Function (anonymous)] },
+    parent: Module {
+      id: 'C:\\nodejs202103\\node_modules\\tracer\\lib\\console.js',
+      path: 'C:\\nodejs202103\\node_modules\\tracer\\lib',
+      exports: [Function (anonymous)],
+      parent: [Module],
+      filename: 'C:\\nodejs202103\\node_modules\\tracer\\lib\\console.js',
+      loaded: true,
+      children: [Array],
+      paths: [Array]
+    },
+    filename: 'C:\\nodejs202103\\node_modules\\tracer\\lib\\utils.js',
+    loaded: true,
+    children: [],
+    paths: [
+      'C:\\nodejs202103\\node_modules\\tracer\\lib\\node_modules',
+      'C:\\nodejs202103\\node_modules\\tracer\\node_modules',
+      'C:\\nodejs202103\\node_modules',
+      'C:\\node_modules'
+    ]
+  },
+  'C:\\nodejs202103\\node_modules\\tracer\\lib\\settings.js': Module {
+    id: 'C:\\nodejs202103\\node_modules\\tracer\\lib\\settings.js',
+    path: 'C:\\nodejs202103\\node_modules\\tracer\\lib',
+    exports: {
+      settings: [Object],
+      close: [Function: close],
+      setLevel: [Function: setLevel],
+      getLevel: [Function: getLevel]
+    },
+    parent: Module {
+      id: 'C:\\nodejs202103\\node_modules\\tracer\\lib\\console.js',
+      path: 'C:\\nodejs202103\\node_modules\\tracer\\lib',
+      exports: [Function (anonymous)],
+      parent: [Module],
+      filename: 'C:\\nodejs202103\\node_modules\\tracer\\lib\\console.js',
+      loaded: true,
+      children: [Array],
+      paths: [Array]
+    },
+    filename: 'C:\\nodejs202103\\node_modules\\tracer\\lib\\settings.js',
+    loaded: true,
+    children: [],
+    paths: [
+      'C:\\nodejs202103\\node_modules\\tracer\\lib\\node_modules',
+      'C:\\nodejs202103\\node_modules\\tracer\\node_modules',
+      'C:\\nodejs202103\\node_modules',
+      'C:\\node_modules'
+    ]
+  },
+  'C:\\nodejs202103\\node_modules\\tracer\\lib\\color_console.js': Module {
+    id: 'C:\\nodejs202103\\node_modules\\tracer\\lib\\color_console.js',
+    path: 'C:\\nodejs202103\\node_modules\\tracer\\lib',
+    exports: [Function (anonymous)],
+    parent: Module {
+      id: 'C:\\nodejs202103\\node_modules\\tracer\\lib\\index.js',
+      path: 'C:\\nodejs202103\\node_modules\\tracer\\lib',
+      exports: [Object],
+      parent: [Module],
+      filename: 'C:\\nodejs202103\\node_modules\\tracer\\lib\\index.js',
+      loaded: true,
+      children: [Array],
+      paths: [Array]
+    },
+    filename: 'C:\\nodejs202103\\node_modules\\tracer\\lib\\color_console.js',
+    loaded: true,
+    children: [ [Module], [Module] ],
+    paths: [
+      'C:\\nodejs202103\\node_modules\\tracer\\lib\\node_modules',
+      'C:\\nodejs202103\\node_modules\\tracer\\node_modules',
+      'C:\\nodejs202103\\node_modules',
+      'C:\\node_modules'
+    ]
+  },
+  'C:\\nodejs202103\\node_modules\\colors\\safe.js': Module {
+    id: 'C:\\nodejs202103\\node_modules\\colors\\safe.js',
+    path: 'C:\\nodejs202103\\node_modules\\colors',
+    exports: {
+      themes: {},
+      styles: [Object],
+      supportsColor: [Function: getSupportLevel],
+      enabled: true,
+      enable: [Function (anonymous)],
+      disable: [Function (anonymous)],
+      strip: [Function (anonymous)],
+      stripColors: [Function (anonymous)],
+      stylize: [Function: stylize],
+      setTheme: [Function (anonymous)],
+      trap: [Function: runTheTrap],
+      zalgo: [Function: zalgo],
+      maps: [Object],
+      america: [Function (anonymous)],
+      zebra: [Function (anonymous)],
+      rainbow: [Function (anonymous)],
+      random: [Function (anonymous)]
+    },
+    parent: Module {
+      id: 'C:\\nodejs202103\\node_modules\\tracer\\lib\\color_console.js',
+      path: 'C:\\nodejs202103\\node_modules\\tracer\\lib',
+      exports: [Function (anonymous)],
+      parent: [Module],
+      filename: 'C:\\nodejs202103\\node_modules\\tracer\\lib\\color_console.js',
+      loaded: true,
+      children: [Array],
+      paths: [Array]
+    },
+    filename: 'C:\\nodejs202103\\node_modules\\colors\\safe.js',
+    loaded: true,
+    children: [ [Module] ],
+    paths: [
+      'C:\\nodejs202103\\node_modules\\colors\\node_modules',
+      'C:\\nodejs202103\\node_modules',
+      'C:\\node_modules'
+    ]
+  },
+  'C:\\nodejs202103\\node_modules\\colors\\lib\\colors.js': Module {
+    id: 'C:\\nodejs202103\\node_modules\\colors\\lib\\colors.js',
+    path: 'C:\\nodejs202103\\node_modules\\colors\\lib',
+    exports: {
+      themes: {},
+      styles: [Object],
+      supportsColor: [Function: getSupportLevel],
+      enabled: true,
+      enable: [Function (anonymous)],
+      disable: [Function (anonymous)],
+      strip: [Function (anonymous)],
+      stripColors: [Function (anonymous)],
+      stylize: [Function: stylize],
+      setTheme: [Function (anonymous)],
+      trap: [Function: runTheTrap],
+      zalgo: [Function: zalgo],
+      maps: [Object],
+      america: [Function (anonymous)],
+      zebra: [Function (anonymous)],
+      rainbow: [Function (anonymous)],
+      random: [Function (anonymous)]
+    },
+    parent: Module {
+      id: 'C:\\nodejs202103\\node_modules\\colors\\safe.js',
+      path: 'C:\\nodejs202103\\node_modules\\colors',
+      exports: [Object],
+      parent: [Module],
+      filename: 'C:\\nodejs202103\\node_modules\\colors\\safe.js',
+      loaded: true,
+      children: [Array],
+      paths: [Array]
+    },
+    filename: 'C:\\nodejs202103\\node_modules\\colors\\lib\\colors.js',
+    loaded: true,
+    children: [
+      [Module], [Module],
+      [Module], [Module],
+      [Module], [Module],
+      [Module], [Module]
+    ],
+    paths: [
+      'C:\\nodejs202103\\node_modules\\colors\\lib\\node_modules',
+      'C:\\nodejs202103\\node_modules\\colors\\node_modules',
+      'C:\\nodejs202103\\node_modules',
+      'C:\\node_modules'
+    ]
+  },
+  'C:\\nodejs202103\\node_modules\\colors\\lib\\styles.js': Module {
+    id: 'C:\\nodejs202103\\node_modules\\colors\\lib\\styles.js',
+    path: 'C:\\nodejs202103\\node_modules\\colors\\lib',
+    exports: {
+      reset: [Array],
+      bold: [Array],
+      dim: [Array],
+      italic: [Array],
+      underline: [Array],
+      inverse: [Array],
+      hidden: [Array],
+      strikethrough: [Array],
+      black: [Array],
+      red: [Array],
+      green: [Array],
+      yellow: [Array],
+      blue: [Array],
+      magenta: [Array],
+      cyan: [Array],
+      white: [Array],
+      gray: [Array],
+      grey: [Array],
+      brightRed: [Array],
+      brightGreen: [Array],
+      brightYellow: [Array],
+      brightBlue: [Array],
+      brightMagenta: [Array],
+      brightCyan: [Array],
+      brightWhite: [Array],
+      bgBlack: [Array],
+      bgRed: [Array],
+      bgGreen: [Array],
+      bgYellow: [Array],
+      bgBlue: [Array],
+      bgMagenta: [Array],
+      bgCyan: [Array],
+      bgWhite: [Array],
+      bgGray: [Array],
+      bgGrey: [Array],
+      bgBrightRed: [Array],
+      bgBrightGreen: [Array],
+      bgBrightYellow: [Array],
+      bgBrightBlue: [Array],
+      bgBrightMagenta: [Array],
+      bgBrightCyan: [Array],
+      bgBrightWhite: [Array],
+      blackBG: [Array],
+      redBG: [Array],
+      greenBG: [Array],
+      yellowBG: [Array],
+      blueBG: [Array],
+      magentaBG: [Array],
+      cyanBG: [Array],
+      whiteBG: [Array]
+    },
+    parent: Module {
+      id: 'C:\\nodejs202103\\node_modules\\colors\\lib\\colors.js',
+      path: 'C:\\nodejs202103\\node_modules\\colors\\lib',
+      exports: [Object],
+      parent: [Module],
+      filename: 'C:\\nodejs202103\\node_modules\\colors\\lib\\colors.js',
+      loaded: true,
+      children: [Array],
+      paths: [Array]
+    },
+    filename: 'C:\\nodejs202103\\node_modules\\colors\\lib\\styles.js',
+    loaded: true,
+    children: [],
+    paths: [
+      'C:\\nodejs202103\\node_modules\\colors\\lib\\node_modules',
+      'C:\\nodejs202103\\node_modules\\colors\\node_modules',
+      'C:\\nodejs202103\\node_modules',
+      'C:\\node_modules'
+    ]
+  },
+  'C:\\nodejs202103\\node_modules\\colors\\lib\\system\\supports-colors.js': Module {
+    id: 'C:\\nodejs202103\\node_modules\\colors\\lib\\system\\supports-colors.js',
+    path: 'C:\\nodejs202103\\node_modules\\colors\\lib\\system',
+    exports: {
+      supportsColor: [Function: getSupportLevel],
+      stdout: [Object],
+      stderr: [Object]
+    },
+    parent: Module {
+      id: 'C:\\nodejs202103\\node_modules\\colors\\lib\\colors.js',
+      path: 'C:\\nodejs202103\\node_modules\\colors\\lib',
+      exports: [Object],
+      parent: [Module],
+      filename: 'C:\\nodejs202103\\node_modules\\colors\\lib\\colors.js',
+      loaded: true,
+      children: [Array],
+      paths: [Array]
+    },
+    filename: 'C:\\nodejs202103\\node_modules\\colors\\lib\\system\\supports-colors.js',
+    loaded: true,
+    children: [ [Module] ],
+    paths: [
+      'C:\\nodejs202103\\node_modules\\colors\\lib\\system\\node_modules',
+      'C:\\nodejs202103\\node_modules\\colors\\lib\\node_modules',
+      'C:\\nodejs202103\\node_modules\\colors\\node_modules',
+      'C:\\nodejs202103\\node_modules',
+      'C:\\node_modules'
+    ]
+  },
+  'C:\\nodejs202103\\node_modules\\colors\\lib\\system\\has-flag.js': Module {
+    id: 'C:\\nodejs202103\\node_modules\\colors\\lib\\system\\has-flag.js',
+    path: 'C:\\nodejs202103\\node_modules\\colors\\lib\\system',
+    exports: [Function (anonymous)],
+    parent: Module {
+      id: 'C:\\nodejs202103\\node_modules\\colors\\lib\\system\\supports-colors.js',
+      path: 'C:\\nodejs202103\\node_modules\\colors\\lib\\system',
+      exports: [Object],
+      parent: [Module],
+      filename: 'C:\\nodejs202103\\node_modules\\colors\\lib\\system\\supports-colors.js',
+      loaded: true,
+      children: [Array],
+      paths: [Array]
+    },
+    filename: 'C:\\nodejs202103\\node_modules\\colors\\lib\\system\\has-flag.js',
+    loaded: true,
+    children: [],
+    paths: [
+      'C:\\nodejs202103\\node_modules\\colors\\lib\\system\\node_modules',
+      'C:\\nodejs202103\\node_modules\\colors\\lib\\node_modules',
+      'C:\\nodejs202103\\node_modules\\colors\\node_modules',
+      'C:\\nodejs202103\\node_modules',
+      'C:\\node_modules'
+    ]
+  },
+  'C:\\nodejs202103\\node_modules\\colors\\lib\\custom\\trap.js': Module {
+    id: 'C:\\nodejs202103\\node_modules\\colors\\lib\\custom\\trap.js',
+    path: 'C:\\nodejs202103\\node_modules\\colors\\lib\\custom',
+    exports: [Function: runTheTrap],
+    parent: Module {
+      id: 'C:\\nodejs202103\\node_modules\\colors\\lib\\colors.js',
+      path: 'C:\\nodejs202103\\node_modules\\colors\\lib',
+      exports: [Object],
+      parent: [Module],
+      filename: 'C:\\nodejs202103\\node_modules\\colors\\lib\\colors.js',
+      loaded: true,
+      children: [Array],
+      paths: [Array]
+    },
+    filename: 'C:\\nodejs202103\\node_modules\\colors\\lib\\custom\\trap.js',
+    loaded: true,
+    children: [],
+    paths: [
+      'C:\\nodejs202103\\node_modules\\colors\\lib\\custom\\node_modules',
+      'C:\\nodejs202103\\node_modules\\colors\\lib\\node_modules',
+      'C:\\nodejs202103\\node_modules\\colors\\node_modules',
+      'C:\\nodejs202103\\node_modules',
+      'C:\\node_modules'
+    ]
+  },
+  'C:\\nodejs202103\\node_modules\\colors\\lib\\custom\\zalgo.js': Module {
+    id: 'C:\\nodejs202103\\node_modules\\colors\\lib\\custom\\zalgo.js',
+    path: 'C:\\nodejs202103\\node_modules\\colors\\lib\\custom',
+    exports: [Function: zalgo],
+    parent: Module {
+      id: 'C:\\nodejs202103\\node_modules\\colors\\lib\\colors.js',
+      path: 'C:\\nodejs202103\\node_modules\\colors\\lib',
+      exports: [Object],
+      parent: [Module],
+      filename: 'C:\\nodejs202103\\node_modules\\colors\\lib\\colors.js',
+      loaded: true,
+      children: [Array],
+      paths: [Array]
+    },
+    filename: 'C:\\nodejs202103\\node_modules\\colors\\lib\\custom\\zalgo.js',
+    loaded: true,
+    children: [],
+    paths: [
+      'C:\\nodejs202103\\node_modules\\colors\\lib\\custom\\node_modules',
+      'C:\\nodejs202103\\node_modules\\colors\\lib\\node_modules',
+      'C:\\nodejs202103\\node_modules\\colors\\node_modules',
+      'C:\\nodejs202103\\node_modules',
+      'C:\\node_modules'
+    ]
+  },
+  'C:\\nodejs202103\\node_modules\\colors\\lib\\maps\\america.js': Module {
+    id: 'C:\\nodejs202103\\node_modules\\colors\\lib\\maps\\america.js',
+    path: 'C:\\nodejs202103\\node_modules\\colors\\lib\\maps',
+    exports: [Function (anonymous)],
+    parent: Module {
+      id: 'C:\\nodejs202103\\node_modules\\colors\\lib\\colors.js',
+      path: 'C:\\nodejs202103\\node_modules\\colors\\lib',
+      exports: [Object],
+      parent: [Module],
+      filename: 'C:\\nodejs202103\\node_modules\\colors\\lib\\colors.js',
+      loaded: true,
+      children: [Array],
+      paths: [Array]
+    },
+    filename: 'C:\\nodejs202103\\node_modules\\colors\\lib\\maps\\america.js',
+    loaded: true,
+    children: [],
+    paths: [
+      'C:\\nodejs202103\\node_modules\\colors\\lib\\maps\\node_modules',
+      'C:\\nodejs202103\\node_modules\\colors\\lib\\node_modules',
+      'C:\\nodejs202103\\node_modules\\colors\\node_modules',
+      'C:\\nodejs202103\\node_modules',
+      'C:\\node_modules'
+    ]
+  },
+  'C:\\nodejs202103\\node_modules\\colors\\lib\\maps\\zebra.js': Module {
+    id: 'C:\\nodejs202103\\node_modules\\colors\\lib\\maps\\zebra.js',
+    path: 'C:\\nodejs202103\\node_modules\\colors\\lib\\maps',
+    exports: [Function (anonymous)],
+    parent: Module {
+      id: 'C:\\nodejs202103\\node_modules\\colors\\lib\\colors.js',
+      path: 'C:\\nodejs202103\\node_modules\\colors\\lib',
+      exports: [Object],
+      parent: [Module],
+      filename: 'C:\\nodejs202103\\node_modules\\colors\\lib\\colors.js',
+      loaded: true,
+      children: [Array],
+      paths: [Array]
+    },
+    filename: 'C:\\nodejs202103\\node_modules\\colors\\lib\\maps\\zebra.js',
+    loaded: true,
+    children: [],
+    paths: [
+      'C:\\nodejs202103\\node_modules\\colors\\lib\\maps\\node_modules',
+      'C:\\nodejs202103\\node_modules\\colors\\lib\\node_modules',
+      'C:\\nodejs202103\\node_modules\\colors\\node_modules',
+      'C:\\nodejs202103\\node_modules',
+      'C:\\node_modules'
+    ]
+  },
+  'C:\\nodejs202103\\node_modules\\colors\\lib\\maps\\rainbow.js': Module {
+    id: 'C:\\nodejs202103\\node_modules\\colors\\lib\\maps\\rainbow.js',
+    path: 'C:\\nodejs202103\\node_modules\\colors\\lib\\maps',
+    exports: [Function (anonymous)],
+    parent: Module {
+      id: 'C:\\nodejs202103\\node_modules\\colors\\lib\\colors.js',
+      path: 'C:\\nodejs202103\\node_modules\\colors\\lib',
+      exports: [Object],
+      parent: [Module],
+      filename: 'C:\\nodejs202103\\node_modules\\colors\\lib\\colors.js',
+      loaded: true,
+      children: [Array],
+      paths: [Array]
+    },
+    filename: 'C:\\nodejs202103\\node_modules\\colors\\lib\\maps\\rainbow.js',
+    loaded: true,
+    children: [],
+    paths: [
+      'C:\\nodejs202103\\node_modules\\colors\\lib\\maps\\node_modules',
+      'C:\\nodejs202103\\node_modules\\colors\\lib\\node_modules',
+      'C:\\nodejs202103\\node_modules\\colors\\node_modules',
+      'C:\\nodejs202103\\node_modules',
+      'C:\\node_modules'
+    ]
+  },
+  'C:\\nodejs202103\\node_modules\\colors\\lib\\maps\\random.js': Module {
+    id: 'C:\\nodejs202103\\node_modules\\colors\\lib\\maps\\random.js',
+    path: 'C:\\nodejs202103\\node_modules\\colors\\lib\\maps',
+    exports: [Function (anonymous)],
+    parent: Module {
+      id: 'C:\\nodejs202103\\node_modules\\colors\\lib\\colors.js',
+      path: 'C:\\nodejs202103\\node_modules\\colors\\lib',
+      exports: [Object],
+      parent: [Module],
+      filename: 'C:\\nodejs202103\\node_modules\\colors\\lib\\colors.js',
+      loaded: true,
+      children: [Array],
+      paths: [Array]
+    },
+    filename: 'C:\\nodejs202103\\node_modules\\colors\\lib\\maps\\random.js',
+    loaded: true,
+    children: [],
+    paths: [
+      'C:\\nodejs202103\\node_modules\\colors\\lib\\maps\\node_modules',
+      'C:\\nodejs202103\\node_modules\\colors\\lib\\node_modules',
+      'C:\\nodejs202103\\node_modules\\colors\\node_modules',
+      'C:\\nodejs202103\\node_modules',
+      'C:\\node_modules'
+    ]
+  },
+  'C:\\nodejs202103\\node_modules\\tracer\\lib\\dailyfile.js': Module {
+    id: 'C:\\nodejs202103\\node_modules\\tracer\\lib\\dailyfile.js',
+    path: 'C:\\nodejs202103\\node_modules\\tracer\\lib',
+    exports: [Function (anonymous)],
+    parent: Module {
+      id: 'C:\\nodejs202103\\node_modules\\tracer\\lib\\index.js',
+      path: 'C:\\nodejs202103\\node_modules\\tracer\\lib',
+      exports: [Object],
+      parent: [Module],
+      filename: 'C:\\nodejs202103\\node_modules\\tracer\\lib\\index.js',
+      loaded: true,
+      children: [Array],
+      paths: [Array]
+    },
+    filename: 'C:\\nodejs202103\\node_modules\\tracer\\lib\\dailyfile.js',
+    loaded: true,
+    children: [ [Module], [Module], [Module], [Module] ],
+    paths: [
+      'C:\\nodejs202103\\node_modules\\tracer\\lib\\node_modules',
+      'C:\\nodejs202103\\node_modules\\tracer\\node_modules',
+      'C:\\nodejs202103\\node_modules',
+      'C:\\node_modules'
+    ]
+  },
+  'C:\\nodejs202103\\node_modules\\mkdirp\\index.js': Module {
+    id: 'C:\\nodejs202103\\node_modules\\mkdirp\\index.js',
+    path: 'C:\\nodejs202103\\node_modules\\mkdirp',
+    exports: [Function: mkdirp] {
+      sync: [Function: mkdirpSync],
+      native: [Function (anonymous)],
+      manual: [Function (anonymous)],
+      nativeSync: [Function (anonymous)],
+      manualSync: [Function (anonymous)]
+    },
+    parent: Module {
+      id: 'C:\\nodejs202103\\node_modules\\tracer\\lib\\dailyfile.js',
+      path: 'C:\\nodejs202103\\node_modules\\tracer\\lib',
+      exports: [Function (anonymous)],
+      parent: [Module],
+      filename: 'C:\\nodejs202103\\node_modules\\tracer\\lib\\dailyfile.js',
+      loaded: true,
+      children: [Array],
+      paths: [Array]
+    },
+    filename: 'C:\\nodejs202103\\node_modules\\mkdirp\\index.js',
+    loaded: true,
+    children: [ [Module], [Module], [Module], [Module], [Module] ],
+    paths: [
+      'C:\\nodejs202103\\node_modules\\mkdirp\\node_modules',
+      'C:\\nodejs202103\\node_modules',
+      'C:\\node_modules'
+    ]
+  },
+  'C:\\nodejs202103\\node_modules\\mkdirp\\lib\\opts-arg.js': Module {
+    id: 'C:\\nodejs202103\\node_modules\\mkdirp\\lib\\opts-arg.js',
+    path: 'C:\\nodejs202103\\node_modules\\mkdirp\\lib',
+    exports: [Function: optsArg],
+    parent: Module {
+      id: 'C:\\nodejs202103\\node_modules\\mkdirp\\index.js',
+      path: 'C:\\nodejs202103\\node_modules\\mkdirp',
+      exports: [Function],
+      parent: [Module],
+      filename: 'C:\\nodejs202103\\node_modules\\mkdirp\\index.js',
+      loaded: true,
+      children: [Array],
+      paths: [Array]
+    },
+    filename: 'C:\\nodejs202103\\node_modules\\mkdirp\\lib\\opts-arg.js',
+    loaded: true,
+    children: [],
+    paths: [
+      'C:\\nodejs202103\\node_modules\\mkdirp\\lib\\node_modules',
+      'C:\\nodejs202103\\node_modules\\mkdirp\\node_modules',
+      'C:\\nodejs202103\\node_modules',
+      'C:\\node_modules'
+    ]
+  },
+  'C:\\nodejs202103\\node_modules\\mkdirp\\lib\\path-arg.js': Module {
+    id: 'C:\\nodejs202103\\node_modules\\mkdirp\\lib\\path-arg.js',
+    path: 'C:\\nodejs202103\\node_modules\\mkdirp\\lib',
+    exports: [Function: pathArg],
+    parent: Module {
+      id: 'C:\\nodejs202103\\node_modules\\mkdirp\\index.js',
+      path: 'C:\\nodejs202103\\node_modules\\mkdirp',
+      exports: [Function],
+      parent: [Module],
+      filename: 'C:\\nodejs202103\\node_modules\\mkdirp\\index.js',
+      loaded: true,
+      children: [Array],
+      paths: [Array]
+    },
+    filename: 'C:\\nodejs202103\\node_modules\\mkdirp\\lib\\path-arg.js',
+    loaded: true,
+    children: [],
+    paths: [
+      'C:\\nodejs202103\\node_modules\\mkdirp\\lib\\node_modules',
+      'C:\\nodejs202103\\node_modules\\mkdirp\\node_modules',
+      'C:\\nodejs202103\\node_modules',
+      'C:\\node_modules'
+    ]
+  },
+  'C:\\nodejs202103\\node_modules\\mkdirp\\lib\\mkdirp-native.js': Module {
+    id: 'C:\\nodejs202103\\node_modules\\mkdirp\\lib\\mkdirp-native.js',
+    path: 'C:\\nodejs202103\\node_modules\\mkdirp\\lib',
+    exports: {
+      mkdirpNative: [Function: mkdirpNative],
+      mkdirpNativeSync: [Function: mkdirpNativeSync]
+    },
+    parent: Module {
+      id: 'C:\\nodejs202103\\node_modules\\mkdirp\\index.js',
+      path: 'C:\\nodejs202103\\node_modules\\mkdirp',
+      exports: [Function],
+      parent: [Module],
+      filename: 'C:\\nodejs202103\\node_modules\\mkdirp\\index.js',
+      loaded: true,
+      children: [Array],
+      paths: [Array]
+    },
+    filename: 'C:\\nodejs202103\\node_modules\\mkdirp\\lib\\mkdirp-native.js',
+    loaded: true,
+    children: [ [Module], [Module] ],
+    paths: [
+      'C:\\nodejs202103\\node_modules\\mkdirp\\lib\\node_modules',
+      'C:\\nodejs202103\\node_modules\\mkdirp\\node_modules',
+      'C:\\nodejs202103\\node_modules',
+      'C:\\node_modules'
+    ]
+  },
+  'C:\\nodejs202103\\node_modules\\mkdirp\\lib\\find-made.js': Module {
+    id: 'C:\\nodejs202103\\node_modules\\mkdirp\\lib\\find-made.js',
+    path: 'C:\\nodejs202103\\node_modules\\mkdirp\\lib',
+    exports: {
+      findMade: [Function: findMade],
+      findMadeSync: [Function: findMadeSync]
+    },
+    parent: Module {
+      id: 'C:\\nodejs202103\\node_modules\\mkdirp\\lib\\mkdirp-native.js',
+      path: 'C:\\nodejs202103\\node_modules\\mkdirp\\lib',
+      exports: [Object],
+      parent: [Module],
+      filename: 'C:\\nodejs202103\\node_modules\\mkdirp\\lib\\mkdirp-native.js',
+      loaded: true,
+      children: [Array],
+      paths: [Array]
+    },
+    filename: 'C:\\nodejs202103\\node_modules\\mkdirp\\lib\\find-made.js',
+    loaded: true,
+    children: [],
+    paths: [
+      'C:\\nodejs202103\\node_modules\\mkdirp\\lib\\node_modules',
+      'C:\\nodejs202103\\node_modules\\mkdirp\\node_modules',
+      'C:\\nodejs202103\\node_modules',
+      'C:\\node_modules'
+    ]
+  },
+  'C:\\nodejs202103\\node_modules\\mkdirp\\lib\\mkdirp-manual.js': Module {
+    id: 'C:\\nodejs202103\\node_modules\\mkdirp\\lib\\mkdirp-manual.js',
+    path: 'C:\\nodejs202103\\node_modules\\mkdirp\\lib',
+    exports: {
+      mkdirpManual: [Function: mkdirpManual],
+      mkdirpManualSync: [Function: mkdirpManualSync]
+    },
+    parent: Module {
+      id: 'C:\\nodejs202103\\node_modules\\mkdirp\\lib\\mkdirp-native.js',
+      path: 'C:\\nodejs202103\\node_modules\\mkdirp\\lib',
+      exports: [Object],
+      parent: [Module],
+      filename: 'C:\\nodejs202103\\node_modules\\mkdirp\\lib\\mkdirp-native.js',
+      loaded: true,
+      children: [Array],
+      paths: [Array]
+    },
+    filename: 'C:\\nodejs202103\\node_modules\\mkdirp\\lib\\mkdirp-manual.js',
+    loaded: true,
+    children: [],
+    paths: [
+      'C:\\nodejs202103\\node_modules\\mkdirp\\lib\\node_modules',
+      'C:\\nodejs202103\\node_modules\\mkdirp\\node_modules',
+      'C:\\nodejs202103\\node_modules',
+      'C:\\node_modules'
+    ]
+  },
+  'C:\\nodejs202103\\node_modules\\mkdirp\\lib\\use-native.js': Module {
+    id: 'C:\\nodejs202103\\node_modules\\mkdirp\\lib\\use-native.js',
+    path: 'C:\\nodejs202103\\node_modules\\mkdirp\\lib',
+    exports: {
+      useNative: [Function (anonymous)],
+      useNativeSync: [Function (anonymous)]
+    },
+    parent: Module {
+      id: 'C:\\nodejs202103\\node_modules\\mkdirp\\index.js',
+      path: 'C:\\nodejs202103\\node_modules\\mkdirp',
+      exports: [Function],
+      parent: [Module],
+      filename: 'C:\\nodejs202103\\node_modules\\mkdirp\\index.js',
+      loaded: true,
+      children: [Array],
+      paths: [Array]
+    },
+    filename: 'C:\\nodejs202103\\node_modules\\mkdirp\\lib\\use-native.js',
+    loaded: true,
+    children: [],
+    paths: [
+      'C:\\nodejs202103\\node_modules\\mkdirp\\lib\\node_modules',
+      'C:\\nodejs202103\\node_modules\\mkdirp\\node_modules',
+      'C:\\nodejs202103\\node_modules',
+      'C:\\node_modules'
+    ]
+  },
+  'C:\\nodejs202103\\modules\\custom\\module02\\m2.js': Module {
+    id: 'C:\\nodejs202103\\modules\\custom\\module02\\m2.js',
+    path: 'C:\\nodejs202103\\modules\\custom\\module02',
+    exports: {},
+    parent: Module {
+      id: '.',
+      path: 'C:\\nodejs202103\\modules\\custom\\module02',
+      exports: {},
+      parent: null,
+      filename: 'C:\\nodejs202103\\modules\\custom\\module02\\m1.js',
+      loaded: false,
+      children: [Array],
+      paths: [Array]
+    },
+    filename: 'C:\\nodejs202103\\modules\\custom\\module02\\m2.js',
+    loaded: false,
+    children: [ [Module], [Module] ],
+    paths: [
+      'C:\\nodejs202103\\modules\\custom\\module02\\node_modules',
+      'C:\\nodejs202103\\modules\\custom\\node_modules',
+      'C:\\nodejs202103\\modules\\node_modules',
+      'C:\\nodejs202103\\node_modules',
+      'C:\\node_modules'
+    ]
+  },
+  'C:\\nodejs202103\\modules\\custom\\module02\\m3.js': Module {
+    id: 'C:\\nodejs202103\\modules\\custom\\module02\\m3.js',
+    path: 'C:\\nodejs202103\\modules\\custom\\module02',
+    exports: {},
+    parent: Module {
+      id: 'C:\\nodejs202103\\modules\\custom\\module02\\m2.js',
+      path: 'C:\\nodejs202103\\modules\\custom\\module02',
+      exports: {},
+      parent: [Module],
+      filename: 'C:\\nodejs202103\\modules\\custom\\module02\\m2.js',
+      loaded: false,
+      children: [Array],
+      paths: [Array]
+    },
+    filename: 'C:\\nodejs202103\\modules\\custom\\module02\\m3.js',
+    loaded: false,
+    children: [ [Module], [Module] ],
+    paths: [
+      'C:\\nodejs202103\\modules\\custom\\module02\\node_modules',
+      'C:\\nodejs202103\\modules\\custom\\node_modules',
+      'C:\\nodejs202103\\modules\\node_modules',
+      'C:\\nodejs202103\\node_modules',
+      'C:\\node_modules'
+    ]
+  },
+  'C:\\nodejs202103\\modules\\custom\\module02\\logger.js': Module {
+    id: 'C:\\nodejs202103\\modules\\custom\\module02\\logger.js',
+    path: 'C:\\nodejs202103\\modules\\custom\\module02',
+    exports: {
+      log: [Function: noop],
+      trace: [Function: noop],
+      debug: [Function (anonymous)],
+      info: [Function (anonymous)],
+      warn: [Function (anonymous)],
+      error: [Function (anonymous)],
+      fatal: [Function (anonymous)],
+      dir: [Function: dir],
+      time: [Function: time],
+      timeEnd: [Function: timeEnd],
+      timeLog: [Function: timeLog],
+      assert: [Function: assert],
+      clear: [Function: clear],
+      count: [Function: count],
+      countReset: [Function: countReset],
+      group: [Function: group],
+      groupEnd: [Function: groupEnd],
+      table: [Function: table],
+      dirxml: [Function: dirxml],
+      groupCollapsed: [Function: groupCollapsed],
+      _stdout: [WriteStream],
+      _stderr: [WriteStream],
+      _stdoutErrorHandler: [Function (anonymous)],
+      _stderrErrorHandler: [Function (anonymous)],
+      _ignoreErrors: true,
+      _times: SafeMap(0) [Map] {},
+      Console: [Function: Console],
+      profile: [Function: profile],
+      profileEnd: [Function: profileEnd],
+      timeStamp: [Function: timeStamp],
+      context: [Function: context]
+    },
+    parent: Module {
+      id: 'C:\\nodejs202103\\modules\\custom\\module02\\m3.js',
+      path: 'C:\\nodejs202103\\modules\\custom\\module02',
+      exports: {},
+      parent: [Module],
+      filename: 'C:\\nodejs202103\\modules\\custom\\module02\\m3.js',
+      loaded: false,
+      children: [Array],
+      paths: [Array]
+    },
+    filename: 'C:\\nodejs202103\\modules\\custom\\module02\\logger.js',
+    loaded: true,
+    children: [ [Module] ],
+    paths: [
+      'C:\\nodejs202103\\modules\\custom\\module02\\node_modules',
+      'C:\\nodejs202103\\modules\\custom\\node_modules',
+      'C:\\nodejs202103\\modules\\node_modules',
+      'C:\\nodejs202103\\node_modules',
+      'C:\\node_modules'
+    ]
+  }
+} (in m3.js:6)
+09:48:58 <debug> C:\nodejs202103\modules\custom\module02\m3.js (in m3.js:4)
+09:48:58 <info> m3 로딩 종료. (in m3.js:7)
+09:49:26 <debug> C:\nodejs202103\modules\custom\module02 (in m3.js:3)
+09:49:26 <debug> C:\nodejs202103\modules\custom\module02\m3.js (in m3.js:4)
+09:49:26 <info> m3 로딩 종료. (in m3.js:7)
+09:49:36 <debug> C:\nodejs202103\modules\custom\module02 (in m3.js:3)
+09:49:36 <debug> C:\nodejs202103\modules\custom\module02\m3.js (in m3.js:4)
+09:49:36 <info> m3 로딩 종료. (in m3.js:8)
+09:50:16 <debug> C:\nodejs202103\modules\custom\module02 (in m3.js:3)
+09:50:16 <debug> C:\nodejs202103\modules\custom\module02\m3.js (in m3.js:4)
+09:50:16 <info> m3 로딩 종료. (in m3.js:8)

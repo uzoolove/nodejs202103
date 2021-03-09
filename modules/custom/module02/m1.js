@@ -1,11 +1,11 @@
-var tracer = require('tracer').colorConsole({
-  level: 'info',
-  format: '{{timestamp}} <{{title}}> {{message}} (in {{file}}:{{line}})',
-  dateformat: 'HH:MM:ss'
-});
+// var tracer = require('tracer').colorConsole({
+//   level: 'info',
+//   format: '{{timestamp}} <{{title}}> {{message}} (in {{file}}:{{line}})',
+//   dateformat: 'HH:MM:ss'
+// });
 
-tracer.log('m1 로딩 시작.');
-tracer.debug(__dirname);
-tracer.debug(__filename);
+console.log('m1 로딩 시작.');
+console.debug(__dirname);
+console.debug(__filename);
 require('./m2');
-tracer.info('m1 로딩 종료.');
+console.info('m1 로딩 종료.');
