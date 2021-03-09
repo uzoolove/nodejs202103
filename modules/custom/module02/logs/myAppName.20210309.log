@@ -1,0 +1,6 @@
+09:36:39 <debug> C:\nodejs202103\modules\custom\module02 (in m3.js:10)
+09:36:39 <debug> C:\nodejs202103\modules\custom\module02\m3.js (in m3.js:11)
+09:36:39 <info> m3 로딩 종료. (in m3.js:13)
+09:41:08 <debug> C:\nodejs202103\modules\custom\module02 (in m3.js:3)
+09:41:08 <debug> C:\nodejs202103\modules\custom\module02\m3.js (in m3.js:4)
+09:41:08 <info> m3 로딩 종료. (in m3.js:6)
