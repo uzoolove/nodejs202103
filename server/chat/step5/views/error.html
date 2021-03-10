@@ -7,9 +7,9 @@
 <link rel="shortcut icon" href="/img/favicon.ico">
 </head>
 <body class="well">
-	<h1>에러 메세지</h1>
-	<h2>응답 상태코드</h2>
-	<pre>에러 내역</pre>
+	<h1><%=message%></h1>
+	<h2><%=error.status%></h2>
+	<pre><%=error.stack%></pre>
 </body>
 </html>
 
