@@ -6,6 +6,7 @@
   "dependencies": {
     "clog": "^0.1.6",
     "connect": "^3.7.0",
+    "mime": "^2.5.2",
     "node-static": "^0.7.11",
     "tracer": "^1.1.4"
   },
