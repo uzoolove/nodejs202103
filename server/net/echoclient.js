@@ -1,0 +1,1 @@
+process.stdin.pipe(require('net').createConnection(80, 'localhost')).pipe(process.stdout);
