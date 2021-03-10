@@ -1,7 +1,6 @@
 const net = require('net');
 const fs = require('fs');
 const path = require('path');
-const { RSA_NO_PADDING } = require('constants');
 
 // 1. net.Server 생성
 var tcpServer = new net.createServer(function(socket){
