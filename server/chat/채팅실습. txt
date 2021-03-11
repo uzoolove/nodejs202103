@@ -1,0 +1,30 @@
+step1{
+  - staticserver03.js 복사해서 시작
+  - staticserver.js에서 http 서버 구동, static 자원 응답, 로깅
+  - url 파싱해서 경로와 querystring 분리
+}
+step2{
+  - bin/www.js: http 서버 구동
+  - app.js: static 자원 응답, 로깅
+}
+step3{
+  - middleware/static.js: static 자원 응답
+  - middleware/logger.js: 로깅
+  - app.js: 미들웨어 관리
+}
+step4{
+  - connect 미들웨어 컨테이너 사용
+  - middleware를 connect에 등록
+}
+step5{
+  - routes/index.js: 동적인 자원 처리
+  - views: view 템플릿
+}
+step6{
+  - middleware 폴더 제거
+  - connect용 middleware 사용(morgan, serve-static)
+  - express-session: session 처리
+  - ejs: view engine 추가
+  - nocache: 캐시 무효화
+  - socket.io: 웹소켓 채팅 기능 구현
+}
