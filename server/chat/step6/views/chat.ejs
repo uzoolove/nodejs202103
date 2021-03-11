@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>채팅</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+<link rel="shortcut icon" href="/img/favicon.ico">
+</head>
+<body class="well">
+	<h1><%=title%></h1>
+	<div class="form-group">	  		
+		<textarea id="panel" rows="20" cols="70"  class="form-control" disabled></textarea>
+	</div>
+
+  <% if(username){ %>
+    <div class="form-inline">
+      <output><%=username%></output>
+      <input class="form-control" type="text" size="80" autofocus>
+      <button type="button" class="btn btn-success">메세지 전송</button>
+      <a href="/logout"><button class="btn btn-danger">로그아웃</button></a>
+    </div>
+  <% }else{ %>
+    <p><a href="/">로그인</a> 후 대화에 참여할 수 있습니다.</p>
+  <% } %>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

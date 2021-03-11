@@ -36,7 +36,7 @@ app.use(logger('dev'));
 app.use(static(path.join(__dirname, 'public')));
 
 app.use(session({ // req.session 속성에 세션정보 저장
-  cookie: {maxAge: 1000*30},
+  cookie: {maxAge: 1000*60*60*2},
   secret: 'sometxt',
   rolling: true,  // 매 응답마다 쿠키 시간 초기화
   resave: false,  // 세션값이 수정되지 않으면 서버에 다시 저장하지 않음

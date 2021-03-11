@@ -1,23 +1,37 @@
 var url = require('url');
 var fs = require('fs');
 var path = require('path');
+var ejs = require('ejs');
 
 var views = path.join(__dirname, '..', 'views');
 
 // 채팅화면으로 이동
 function chat(req, res){
-  // res.writeHead(303, {Location: '/chat.html'});
-  // res.end();
-
-  // /chat?username=kim
   // TODO: session의 nickname 정보를 추출
   var nickname = req.session.nickname;
-  var filename = path.join(views, 'chat.html');
-  fs.readFile(filename, function(err, data){
-    res.writeHead(200, {'Content-Type': 'text/html;charset=utf-8'});
-    data = data.toString().replace('<%=username%>', nickname);
-    res.end(data);
+
+  var filename = path.join(views, 'chat.ejs');
+  ejs.renderFile(filename, {title: '채팅방', username: nickname}, function(err, data){
+    if(err){
+      next(err);
+    }else{
+      res.writeHead(200, {'Content-Type': 'text/html;charset=utf-8'});
+      res.end(data);
+    }
   });
+
+
+  // if(nickname){
+  //   fs.readFile(filename, function(err, data){
+  //     res.writeHead(200, {'Content-Type': 'text/html;charset=utf-8'});
+  //     data = data.toString().replace('<%=username%>', nickname);
+  //     res.end(data);
+  //   });
+  // }else{
+  //   res.writeHead(303, {Location: '/'});
+  //   res.end();
+  // }
+  
 }
 // 로그인
 function login(req, res){
