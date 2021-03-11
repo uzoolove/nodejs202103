@@ -27,6 +27,8 @@ var connect = require('connect');
 var logger = require('morgan');
 var static = require('serve-static');
 var session = require('express-session');
+var ejs = require('ejs');
+var nocache = require('nocache');
 
 const indexRouter = require('./routes/index');
 
@@ -42,6 +44,28 @@ app.use(session({ // req.session 속성에 세션정보 저장
   resave: false,  // 세션값이 수정되지 않으면 서버에 다시 저장하지 않음
   saveUninitialized: false  // 세션에 아무값도 저장되지 않으면 클라이언트에 쿠키를 전송하지 않음
 }));
+
+app.use(nocache());
+
+// ejs를 기본 view engine으로 설정
+app.use(function(req, res, next){
+  var views = path.join(__dirname, 'views');
+  res.locals = {};
+  res.render = function(filename, data){
+    const filepath = path.join(views, filename + '.ejs');
+    data = data || res.locals;
+    ejs.renderFile(filepath, data, function(err, data){
+      if(err){
+        next(err);
+      }else{
+        res.writeHead(200, {'Content-Type': 'text/html;charset=utf-8'});
+        res.end(data);
+      }
+    });
+  };
+  next();
+});
+
 app.use(indexRouter);
 
 // 404 에러 처리 미들웨어
@@ -56,14 +80,21 @@ app.use(function(req, res, next){
 
 // 에러 처리 전용 미들웨어
 app.use(function(error, req, res, next){
-  var filename = path.join(__dirname, 'views', 'error.html');
-  fs.readFile(filename, function(err, data){
-    res.writeHead(500, {'Content-Type': 'text/html;charset=utf-8'});
-    data = data.toString().replace('<%=message%>', error.message)
-                          .replace('<%=error.status%>', error.status)
-                          .replace('<%=error.stack%>', error.stack);
-    res.end(data);
-  });
+  error.status = error.status || 500;
+
+  res.locals.message = error.message,
+  res.locals.error = error;
+
+  res.render('error');
+
+  // var filename = path.join(__dirname, 'views', 'error.html');
+  // fs.readFile(filename, function(err, data){
+  //   res.writeHead(error.status, {'Content-Type': 'text/html;charset=utf-8'});
+  //   data = data.toString().replace('<%=message%>', error.message)
+  //                         .replace('<%=error.status%>', error.status)
+  //                         .replace('<%=error.stack%>', error.stack);
+  //   res.end(data);
+  // });
 });
 
 module.exports = app;
