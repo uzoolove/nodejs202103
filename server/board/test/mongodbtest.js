@@ -35,35 +35,43 @@ var b2 = {
 db.dropDatabase();
 
 // 게시물 등록(collection.insert(document))
+// db.board.insertOne(b1);
+// db.board.insertOne(b2);
+db.board.insertMany([b1, b2]);
 
 
 // 게시물 목록 조회
 // collection.find({검색조건}, {출력속성})).sort({정렬옵션}).limit(개수)
-
+db.board.find().pretty();
+db.board.find({_id: 2}, {_id: 1, writer: 1, title: 1});
+db.board.find({_id: 2}, {content: 0});
+db.board.find({}, {content: 0}).sort({_id: -1}).limit(1);  // -1: 내림차순, 1: 오름차순
 
 // 모든 게시물을 _id의 내림차순으로 조회
 // (출력 컬럼은 번호, 제목, 글쓴이, 조회수, 작성일)
-
+db.board.find({}, {content: 0}).sort({_id: -1});
 
 // 게시물 한건 조회(collection.findOne({검색조건}, {출력속성}))
-
+db.board.findOne({_id: 2});
 
 // 게시물 수정(collection.update({검색조건}, {수정할문서}))
-
+db.board.update({_id: 2}, {view: 190});
+db.board.updateOne({_id: 1}, {$set: {view: 255}});
+db.board.updateOne({_id: 1}, {$inc: {view: 1}});
 
 // 게시물 한건 조회 및 업데이트(collection.findOneAndUpdate({검색조건}, {수정할문서}))
-
+db.board.findOneAndUpdate({_id: 1}, {$inc: {view: 1}});
 
 // 게시물 삭제(collection.deleteOne({검색조건}))
-
+db.board.deleteOne({_id: 1});
 
 
 
 // sequence용 데이터 추가
-
+db.seq.insertOne({index: 1});
 
 // sequence 조회 및 업데이트
-
+db.seq.findOneAndUpdate({}, {$inc: {index: 1}});
 
 // board DB 초기화
 use boardDB;
