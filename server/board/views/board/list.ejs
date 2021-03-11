@@ -32,20 +32,15 @@
 						</tr>
 					</thead>
 					<tbody>
+          <% list.forEach(function(article){ %>
 						<tr class="active">
-							<td>2</td>
-							<td><a href="/board/2">Node.js 가이드</a></td>
-							<td>이영희</td>
-							<td>30</td>
-							<td>2099-07-27 21:33</td>
+							<td><%=article._id%></td>
+							<td><a href="/board/<%=article._id%>"><%=article.title%></a></td>
+							<td><%=article.writer%></td>
+							<td><%=article.view%></td>
+							<td><%=article.regdate%></td>
 						</tr>
-						<tr class="active">
-							<td>1</td>
-							<td><a href="/board/1">mongoDB 가이드</a></td>
-							<td>김철수</td>
-							<td>123</td>
-							<td>2099-07-20 11:25</td>
-						</tr>
+          <% }); %>
 					</tbody>
 				</table>
 			</div>

@@ -21,7 +21,7 @@ module.exports = {
 	// 게시물 목록 조회
 	list: function(callback){
 		// TODO: DB에서 목록 조회한 후 결과를 콜백으로 전달
-
+    callback(boardList);
 	},
 	// 게시물 상세 조회
 	show: function(no, callback){
