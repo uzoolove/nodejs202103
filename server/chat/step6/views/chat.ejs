@@ -23,6 +23,37 @@
     <p><a href="/">로그인</a> 후 대화에 참여할 수 있습니다.</p>
   <% } %>
 
+  <script src="/socket.io/socket.io.js"></script>
+  <script>
+    // 1. 웹소켓 서버 접속
+    var ws = io();
+    // 2. 서버의 메세지 출력
+    var msgOut = document.querySelector('#panel');
+    ws.on('toclient', function(msg){
+      msgOut.value += msg + '\n';
+      msgOut.scrollTop = msgOut.scrollHeight;
+    });
+    // 3. 로그인
+    ws.emit('login', '<%=username%>');
+    // 4. 서버로 메세지 전송
+    var msg = document.querySelector('input');
+    function send(){
+      ws.emit('chat', msg.value);
+      msg.value = '';
+      msg.focus();
+    }
+    // 5. 클릭 이벤트 등록
+    var sendBtn = document.querySelector('button');
+    if(sendBtn){
+      sendBtn.onclick = send;
+      msg.onkeydown = function(event){
+        if(event.keyCode == 13){
+          send();
+        }
+      };
+    }
+  </script>
+
 </body>
 </html>
 
