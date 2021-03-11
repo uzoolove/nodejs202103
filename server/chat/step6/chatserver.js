@@ -8,7 +8,7 @@ function server(io){
       io.emit('toclient', `시스템: ${socket.nickname}님이 입장했습니다.`);
     });
     socket.on('chat', function(msg){
-      io.emit('toclient', `시스템: ${socket.nickname}: ${msg}`);
+      io.emit('toclient', `${socket.nickname}: ${msg}`);
     });
   });
 };
