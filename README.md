@@ -6,6 +6,8 @@
 1. Nodejs 설치 [Download Pages](https://nodejs.org/en/download/)(마우스 오른쪽 버튼 > 새 탭에서 링크 열기)
 2. Visual Studio Code 설치 [Download Pages](https://code.visualstudio.com/download)(마우스 오른쪽 버튼 > 새 탭에서 링크 열기)
 3. Chrome 브라우저 설치 [Download Pages](https://www.google.com/chrome)(마우스 오른쪽 버튼 > 새 탭에서 링크 열기)
+4. MongoDB 설치 [Download Pages](https://www.mongodb.com/try/download/community)(마우스 오른쪽 버튼 > 새 탭에서 링크 열기)
+
 
 ### Visual Studio Code 설정
 1. VSCode 실행

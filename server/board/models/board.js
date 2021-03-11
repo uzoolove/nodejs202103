@@ -26,16 +26,16 @@ module.exports = {
 	// 게시물 상세 조회
 	show: function(no, callback){
 		// TODO: DB에서 no 게시물을 조회한 후 결과를 콜백으로 전달
-    
+    callback(boardList[no]);
 	},
 	// 게시물 등록
 	create: function(article, callback){
 		// TODO: DB에 article을 등록한 후 게시물 번호를 콜백으로 전달
-		
+		callback(1);
 	},
 	// 게시물 삭제
 	remove: function(no, callback){
 		// TODO: DB에서 no 게시물을 삭제한 후 콜백 호출
-
+    callback();
 	}
 };

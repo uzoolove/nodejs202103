@@ -13,26 +13,23 @@
 	</header>
 	<div class="container">
 		<section>
-			<form class="form-horizontal" method="post" action="/board/1?_method=delete">
+			<form class="form-horizontal" method="post" action="/board/<%=article._id%>?_method=delete">
 				<div class="form-group">
 					<label for="writer" class="col-sm-1 control-label">작성자</label>
 					<div class="col-sm-3">
-						<input type="text" class="form-control" readonly value="김철수">
+						<input type="text" class="form-control" readonly value="<%=article.writer%>">
 					</div>
 				</div>
 				<div class="form-group">
 					<label for="title" class="col-sm-1 control-label">제목</label>
 					<div class="col-sm-11">
-						<input type="text" class="form-control" readonly value="mongoDB 가이드">
+						<input type="text" class="form-control" readonly value="<%=article.title%>">
 					</div>
 				</div>
 				<div class="form-group">
 					<label for="content" class="sr-only">내용</label>
 					<div class="col-sm-12">
-						<textarea rows="15" class="form-control" readonly>
-MongoDB가 MySQL과 같은 관계형 데이터베이스 시스템과 차이가 나는 점은 구조화된 데이터를 전통적으로 테이블로 구현하는 대신 문서로 저장하는 것을 지원한다는 데 있다.
-이 문서는 JSON의 바이너리 형태인 BSON으로 인코딩되는데......						
-						</textarea>							
+						<textarea rows="15" class="form-control" readonly><%=article.content%></textarea>							
 					</div>
 				</div>
 				<hr>
