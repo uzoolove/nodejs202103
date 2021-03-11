@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>Node.js 게시판</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<h1>게시판</h1>
+		</div>
+	</header>
+	<div class="container">
+		<section>
+			<div>				
+				<table class="table">
+					<colgroup>
+						<col width="50">
+						<col>
+						<col width="100">
+						<col width="70">
+						<col width="160">
+					</colgroup>
+					<thead>
+						<tr>
+							<th>번호</th>
+							<th>제목</th>
+							<th>글쓴이</th>
+							<th>조회</th>
+							<th>작성일</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="active">
+							<td>2</td>
+							<td><a href="/board/2">Node.js 가이드</a></td>
+							<td>이영희</td>
+							<td>30</td>
+							<td>2099-07-27 21:33</td>
+						</tr>
+						<tr class="active">
+							<td>1</td>
+							<td><a href="/board/1">mongoDB 가이드</a></td>
+							<td>김철수</td>
+							<td>123</td>
+							<td>2099-07-20 11:25</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<hr>
+			<div class="form-group text-center">
+				<a href="/board/new" class="btn btn-default btn-sm">글쓰기</a>
+			</div>
+		</section>
+	</div>
+	<footer>
+		<div class="container">
+			<p class="text-muted">게시판 정책 및 약관 회사소개 광고 마이비즈니스제휴 제안 이용약관 개인정보취급방침 청소년보호 정책 고객센터</p>
+		</div>
+	</footer>
+</body>
+</html>

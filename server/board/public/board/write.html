@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>Node.js 게시판</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<h1>게시판</h1>
+		</div>
+	</header>
+	<div class="container">
+		<section>
+			<form method="post" action="/board/new" class="form-horizontal">
+				<div class="form-group">
+					<label for="writer" class="col-sm-1 control-label">작성자</label>
+					<div class="col-sm-3">
+						<input type="text" class="form-control" name="writer" required autofocus>
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="title" class="col-sm-1 control-label">제목</label>
+					<div class="col-sm-11">
+						<input type="text" class="form-control" name="title" required placeholder="제목을 입력하세요.">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="content" class="sr-only">내용</label>
+					<div class="col-sm-12">
+						<textarea name="content" rows="15" class="form-control" required></textarea>
+					</div>
+				</div>
+				<hr>
+				<div class="form-group">
+					<div class="text-center">
+						<a href="/board/" class="btn btn-default">취소</a>
+						<button type="submit" id="regist" class="btn btn-primary">등록</button>
+					</div>
+				</div>
+			</form>
+		</section>
+	</div>
+	<footer>
+		<div class="container">
+			<p class="text-muted">게시판 정책 및 약관 회사소개 광고 마이비즈니스제휴 제안 이용약관 개인정보취급방침 청소년보호 정책 고객센터</p>
+		</div>
+	</footer>
+</body>
+</html>

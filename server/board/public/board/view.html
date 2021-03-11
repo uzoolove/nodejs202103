@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>Node.js 게시판</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<h1>게시판</h1>
+		</div>
+	</header>
+	<div class="container">
+		<section>
+			<form class="form-horizontal" method="post" action="/board/1">
+				<div class="form-group">
+					<label for="writer" class="col-sm-1 control-label">작성자</label>
+					<div class="col-sm-3">
+						<input type="text" class="form-control" readonly value="김철수">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="title" class="col-sm-1 control-label">제목</label>
+					<div class="col-sm-11">
+						<input type="text" class="form-control" readonly value="mongoDB 가이드">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="content" class="sr-only">내용</label>
+					<div class="col-sm-12">
+						<textarea rows="15" class="form-control" readonly>
+MongoDB가 MySQL과 같은 관계형 데이터베이스 시스템과 차이가 나는 점은 구조화된 데이터를 전통적으로 테이블로 구현하는 대신 문서로 저장하는 것을 지원한다는 데 있다.
+이 문서는 JSON의 바이너리 형태인 BSON으로 인코딩되는데......						
+						</textarea>							
+					</div>
+				</div>
+				<hr>
+				<div class="form-group">
+					<div class="text-center">
+						<a href="/board/" class="btn btn-primary">목록</a>
+						<button type="submit" class="btn btn-default">삭제</button>
+					</div>
+				</div>
+			</form>
+		</section>
+	</div>
+	<footer>
+		<div class="container">
+			<p class="text-muted">게시판 정책 및 약관 회사소개 광고 마이비즈니스제휴 제안 이용약관 개인정보취급방침 청소년보호 정책 고객센터</p>
+		</div>
+	</footer>
+</body>
+</html>
