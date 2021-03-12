@@ -1,17 +1,11 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<meta charset="utf-8">
-<title>Node.js 게시판</title>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  <%- include('../layout/head') %>
 </head>
 <body>
-	<header>
-		<div class="container">
-			<h1><%=title%></h1>
-		</div>
-	</header>
-	<div class="container">
+  <%- include('../layout/header') %>
+  <div class="container">
 		<section>
 			<div>				
 				<table class="table">
@@ -50,10 +44,6 @@
 			</div>
 		</section>
 	</div>
-	<footer>
-		<div class="container">
-			<p class="text-muted">게시판 정책 및 약관 회사소개 광고 마이비즈니스제휴 제안 이용약관 개인정보취급방침 청소년보호 정책 고객센터</p>
-		</div>
-	</footer>
+  <%- include('../layout/footer') %>
 </body>
 </html>
