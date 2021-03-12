@@ -5,6 +5,7 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var methodOverride = require('method-override');
 var session = require('express-session');
+var nocache = require('nocache');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
@@ -24,7 +25,6 @@ app.use('/test', function(req, res, next){
   console.log('session', req.session);
   next();
 });
-
 
 app.use(logger('dev'));
 app.use(express.json());
@@ -50,10 +50,10 @@ app.use('/test', function(req, res, next){
   next();
 });
 
+app.use(nocache());
+
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-
-
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
