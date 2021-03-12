@@ -46,6 +46,9 @@ describe('# upper 함수 테스트', function(){
 var newNo;
 describe.only('# 게시판 테스트', function(){
   // 사전 작업 정의
+  before(function(done){
+    setTimeout(done, 1000);
+  });
 
   var oldList;
   before(function(done){
@@ -53,6 +56,11 @@ describe.only('# 게시판 테스트', function(){
       oldList = result;
       done();
     });
+  });
+
+  // 사후 작업 처리
+  after(function(){
+    model.dbClose();
   });
 
   describe('등록', function(){

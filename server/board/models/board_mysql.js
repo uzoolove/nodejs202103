@@ -32,12 +32,12 @@ module.exports = {
 	show: function(no, cb){
 		pool.query(sql.show, [no], function(err, result){
       pool.query(sql.incView, [no]);
-      cb(result);
+      cb(result[0]);
     });
 	},
 	// 게시물 등록
 	create: function(article, cb){
-		article.regdate = require('moment').format('YYYY-MM-dd HH:mm:ss');
+		article.regdate = require('moment')().format('YYYY-MM-dd HH:mm:ss');
 		pool.query(sql.create, article, function(err, result){
       cb(result.insertId);
     });

@@ -44,6 +44,10 @@ MongoClient.connect(url, { useUnifiedTopology: true }, function(err, client) {
 
 
 module.exports = {
+  // DB 연결 종료
+  dbClose(){
+    dbClient.close();
+  },
 	// 게시물 목록 조회
 	list: function(callback){
 		// TODO: DB에서 목록 조회한 후 결과를 콜백으로 전달
