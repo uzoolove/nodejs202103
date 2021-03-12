@@ -1,17 +1,33 @@
 var express = require('express');
 var router = express.Router();
-// var model = require('../models/board');
-var model = require('../models/board_mysql');
+var model = require('../models/board');
+// var model = require('../models/board_mysql');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.redirect('/board');
 });
 // 목록 조회
-router.get('/board', function(req, res, next) {
+router.get('/board', async function(req, res, next) {
+
   model.list(function(list){
     res.render('board/list', { title: '게시물 목록', list });
   });
+  
+  // Promise 사용(ECMA6, 2015)
+  // model.list2().then(function(list){
+  //   res.render('board/list', { title: '게시물 목록', list });
+  // }).catch(function(err){
+  //   next(err);
+  // });
+
+  // async/await(ECMA2017)
+  // try{
+  //   var list = await model.list2();
+  //   res.render('board/list', { title: '게시물 목록', list });
+  // }catch(err){
+  //   next(err);
+  // }
 });
 // 등록 화면 요청
 router.get('/board/new', function(req, res, next) {

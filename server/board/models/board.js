@@ -49,7 +49,18 @@ module.exports = {
 		// TODO: DB에서 목록 조회한 후 결과를 콜백으로 전달
     db.board.find({}, {content: 0}).sort({_id: -1}).toArray(function(err, result){
       callback(result);
-    });    
+    });
+	},
+  list2: function(){
+    return new Promise(function(resolve, reject){
+      db.board.find({}, {content: 0}).sort({_id: -1}).toArray(function(err, result){
+        if(err){
+          reject(err);
+        }else{
+          resolve(result);
+        }
+      });
+    });
 	},
 	// 게시물 상세 조회
 	show: function(no, callback){
